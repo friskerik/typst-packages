@@ -15,17 +15,10 @@
   // title-background: image("my_custom_background.jpg"), // use your own background
   // size: 19pt,
   config-colors(
+    // if you prefer another color scheme
     theme: liu-colors.darkblue,
     primary: liu-colors.darkblue,
-    //   section: gradient.linear(
-    //   rgb(96, 134, 180),
-    //   rgb(66, 79, 96),
-    // ),
-    // block: gradient.linear(
-    //   rgb(66, 79, 96),
-    //   rgb(96, 134, 180),
-    // ),    //
-  ), // if you prefer another color scheme
+  ),
   // title-background: gradient.linear(
   //   rgb(66, 79, 96),
   //   rgb(96, 134, 180),
@@ -141,18 +134,15 @@ The full list of options with their default values are
     Change the color scheme in the template, e.g.,
     ```typst
     config-colors(theme: liu-colors.green,
-                  primary: liu-colors.gray,
-                  section: gradient.linear(
-                    rgb(96, 134, 180),
-                    rgb(66, 79, 96)))
+                  primary: liu-colors.gray)
     ```
   ]),
   utils.fit-to-height(100%, [
     #align(center, text(size: 25pt, "Color options"))
     - The two main color options are `theme` and `primary`
-    - `theme` sets the main color scheme, used for example for the title page and sectioning slide backgrounds
+    - `theme` sets the main color scheme, used for example for the title page, sectioning slide backgrounds
     - `primary` is used for example for *bold* text
-    - `block` is used for the background of `text-block` (defaults to `primary` color)
+    - `block` is used for the background of `text-block` (defaults to `theme` color)
     - `section` is used for the background of sectioning slides (defaults to `theme` color)
   ]),
 )

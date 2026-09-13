@@ -57,7 +57,7 @@
           radius: (top-left: 5mm, top-right: 5mm),
           width: 100%,
           fill: if fg == none {
-            if _theme_colors.get().block == none { _theme_colors.get().primary } else { _theme_colors.get().block }
+            if _theme_colors.get().block == none { _theme_colors.get().theme } else { _theme_colors.get().block }
           } else { fg },
           inset: 3mm,
           text(fill: white, title),
